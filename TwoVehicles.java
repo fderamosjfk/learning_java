@@ -22,12 +22,12 @@ class Vehicle {
 // This class declares an object of type Vehicle.
 public class TwoVehicles {
     public static void main(String[] args) {
-        Vehicle minivan = new Vehicle(7, 16, 21);
-        Vehicle sportscar = new Vehicle(2, 14, 12);
+        Vehicle minivan1 = new Vehicle(7, 16, 21);
+        Vehicle sportscar1 = new Vehicle(2, 14, 12);
         
-        System.out.println("Minivan can carry " + minivan.passengers + " passengers with a range of " + 
-                           minivan.range() + " miles.");
-        System.out.println("Sportscar can carry " + sportscar.passengers + " with a range of " + 
-                           sportscar.range() + " miles.");
+        System.out.println("Minivan can carry " + minivan1.passengers + " passengers with a range of " + 
+                           minivan1.range() + " miles.");
+        System.out.println("Sportscar can carry " + sportscar1.passengers + " with a range of " + 
+                           sportscar1.range() + " miles.");
     }
 }

@@ -1,3 +1,8 @@
+/*
+javac SampleCalculator.java SampleCalculatorTest.java
+java  org.junit.runner.JUnitCore SampleCalculatorTest
+*/
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 

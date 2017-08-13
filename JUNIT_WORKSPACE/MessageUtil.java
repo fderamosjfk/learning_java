@@ -15,8 +15,17 @@ public class MessageUtil {
       
    // prints the message
    public String printMessage(){
-      System.out.println("From class MessageUtil: [" +
+      System.out.println("From class MessageUtil printMessage(): [" +
                          message + "]");
       return message;
    }   
+
+   // add "Hi!" to the message
+   public String salutationMessage(){
+      message = "Hi " + message;
+      System.out.println("From class MessageUtil salutationMessage(): [" +
+                         message + "]");
+      System.out.println(message);
+      return message;
+   } 
 }

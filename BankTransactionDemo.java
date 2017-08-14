@@ -1,5 +1,6 @@
 // Makes use of following programs:
 //     BankCheckingAccount.java  BankInsufficientFundsException.java
+
 public class BankTransactionDemo {
 
    public static void main(String [] args) {
@@ -13,7 +14,7 @@ public class BankTransactionDemo {
          System.out.println("\nWithdrawing $600...");
          c.withdraw(600.00);
       } catch (BankInsufficientFundsException e) {
-         System.out.println("Sorry, but you are short $" + e.getAmount());
+         System.out.println("Sorry, but you are short of $" + e.getAmount());
          e.printStackTrace();
       }
    }

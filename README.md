@@ -1,2 +1,2 @@
 # learning_java
-Learning Java is fun!!!
+Learning Java is fun

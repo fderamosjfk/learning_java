@@ -19,7 +19,15 @@ public class MessageUtil {
 
    // add "Hi!" to the message
    public String salutationMessage() {
-      message = "Hi!" + message;
+      message = "Hi " + message;
+      System.out.println(message);
+      return message;
+   }
+
+
+   // add "www.inquirer" to the message
+   public String exitMessage() {
+      message = "www.inquirer" + message;
       System.out.println(message);
       return message;
    }

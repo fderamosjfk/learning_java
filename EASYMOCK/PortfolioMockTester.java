@@ -10,7 +10,8 @@ public class PortfolioMockTester {
    public static void main(String[] args){
       PortfolioMockTester tester = new PortfolioMockTester();
       tester.setUp();
-      System.out.println(tester.testMarketValue() ? "pass" : "fail");
+      System.out.println("\nPortfolioMockTest results: " +
+                         (tester.testMarketValue() ? "pass" : "fail"));
    }
 
    public void setUp(){
@@ -55,14 +56,26 @@ public class PortfolioMockTester {
       minValues=  portfolio.getMinimumValues();
       System.out.println(minValues[0]);
       System.out.println(minValues[1]);
+      boolean validateMinValues = (minValues[0] == 25.0) && (minValues[1] == 900.0);
+      System.out.println(validateMinValues);
+      System.out.println();
 
       System.out.println("Maximum values:");
       double[] maxValues = new double[stocks.size()];
       maxValues=  portfolio.getMaximumValues();
       System.out.println(maxValues[0]);
       System.out.println(maxValues[1]);
+      boolean validateMaxValues = (maxValues[0] == 75.0) && (maxValues[1] == 1100.0);
+      System.out.println(validateMaxValues);
+      System.out.println();
 
+      System.out.println("Market value:");
       double marketValue = portfolio.getMarketValue();		
-      return marketValue == 100500.0;
+      System.out.println(marketValue);
+      boolean validateMarketValue = (marketValue == 100500.0);
+      System.out.println(validateMarketValue);
+      System.out.println();
+
+      return validateMinValues && validateMaxValues && validateMarketValue;
    }
 }

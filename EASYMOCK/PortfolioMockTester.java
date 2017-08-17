@@ -40,9 +40,27 @@ public class PortfolioMockTester {
       // mock the behavior of stock service to return the value of various stocks
       EasyMock.expect(stockService.getPrice(googleStock)).andReturn(50.00);
       EasyMock.expect(stockService.getPrice(microsoftStock)).andReturn(1000.00);		
+      EasyMock.expect(stockService.getMaxPrice(googleStock)).andReturn(75.00);
+      EasyMock.expect(stockService.getMaxPrice(microsoftStock)).andReturn(1100.00);		
+
+      EasyMock.expect(stockService.getMinPrice(googleStock)).andReturn(25.00);
+      EasyMock.expect(stockService.getMinPrice(microsoftStock)).andReturn(900.00);		
+
 
       // activate the mock
       EasyMock.replay(stockService);		
+
+      System.out.println("Minimum values:");
+      double[] minValues = new double[stocks.size()];
+      minValues=  portfolio.getMinimumValues();
+      System.out.println(minValues[0]);
+      System.out.println(minValues[1]);
+
+      System.out.println("Maximum values:");
+      double[] maxValues = new double[stocks.size()];
+      maxValues=  portfolio.getMaximumValues();
+      System.out.println(maxValues[0]);
+      System.out.println(maxValues[1]);
 
       double marketValue = portfolio.getMarketValue();		
       return marketValue == 100500.0;

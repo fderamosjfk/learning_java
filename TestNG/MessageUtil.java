@@ -17,18 +17,18 @@ public class MessageUtil {
       return message;
    }
 
-   // add "Hi!" to the message
+   // add "Hi " to the message
    public String salutationMessage() {
-      message = "Hi " + message;
-      System.out.println(message);
-      return message;
+      String messageWithHi = "Hi " + message;
+      System.out.println(messageWithHi);
+      return messageWithHi;
    }
 
 
    // add "www.inquirer" to the message
    public String exitMessage() {
-      message = "www.inquirer" + message;
-      System.out.println(message);
-      return message;
+      String messageWithWWW = "www.inquirer" + message;
+      System.out.println(messageWithWWW);
+      return messageWithWWW;
    }
 }

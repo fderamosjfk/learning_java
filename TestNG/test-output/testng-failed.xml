@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test name="test1(failed)">
+    <parameter name="myName" value="George"/>
+    <parameter name="idNumber" value="19570929"/>
     <classes>
-      <class name="DependsOnGroupsTest">
+      <class name="ParameterizedTestNGTest1">
         <methods>
-          <include name="testPrintMessage"/>
-          <include name="initEnvironmentTest"/>
-          <include name="testSalutationMessage"/>
+          <include name="testParameter"/>
         </methods>
-      </class> <!-- DependsOnGroupsTest -->
+      </class> <!-- ParameterizedTestNGTest1 -->
     </classes>
   </test> <!-- test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<class>
+   <student rollno="393">
+      <firstname>richard</firstname>
+      <lastname>betton</lastname>
+      <nickname>rich</nickname>
+      <marks>92</marks>
+   </student>
+   <student rollno="493">
+      <firstname>william</firstname>
+      <lastname>chadoop</lastname>
+      <nickname>illi</nickname>
+      <marks>85</marks>
+   </student>
+   <student rollno="593">
+      <firstname>lejan</firstname>
+      <lastname>drew</lastname>
+      <nickname>ej</nickname>
+      <marks>97</marks>
+   </student>
+   <student rollno="693">
+      <firstname>therese</firstname>
+      <lastname>castro</lastname>
+      <nickname>tess</nickname>
+      <marks>87</marks>
+   </student>
+</class>

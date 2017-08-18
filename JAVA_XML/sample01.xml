@@ -1,0 +1,30 @@
+<?xml version = "1.0"?>
+<Class>
+   <Name>First Class</Name>
+   <Sections>
+      <Section>
+         <Name>A Section</Name>
+         <Students>
+            <Student>George</Student>
+            <Student>Patrick</Student>
+            <Student>Simon</Student>
+            <Student>Michael</Student>
+            <Student>Cherry</Student>
+            <Student>Ann</Student>
+         </Students>
+      </Section>
+      <Section>
+         <Name>B Section</Name>
+         <Students>
+            <Student>William</Student>
+            <Student>Stewart</Student>
+            <Student>John</Student>
+            <Student>Paul</Student>
+            <Student>Andrew</Student>
+            <Student>Elizabeth</Student>
+            <Student>Josephine</Student>
+            <Student>Therese</Student>
+         </Students>
+      </Section>
+   </Sections>
+</Class>

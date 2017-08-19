@@ -1,3 +1,5 @@
+// example of importing a package
+
 package bookpackext;
 import bookpack.Book;
 
